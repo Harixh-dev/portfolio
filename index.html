@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src='script.js' defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#Header">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Backend Developer</p>
+                <h1>Hi, I'm <span>Hariharan</span><br> from India</h1>
+
+            </div>
+        </div>
+    </div>
+<!------------About-------------------------------->
+
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="About-col-1">
+                    <img src="images/user.JPG">
+                </div>
+                <div class="About-col-2">
+                    <h1 class="sub-title"> About me</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto alias,
+                    inventore aut non magni illum nobis unde exercitationem, in numquam voluptas nemo.
+                    Dolorum harum rerum repudiandae, in tenetur perspiciatis temporibus.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Backend Development</span><br>Java</li>
+                            <li><span>Web Development</span><br>Html/Css/Js</li>
+                            <li><span>Database Admin</span><br>Oracle Sql/MySQL</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2024-2025</span><br>Data procssor at Tata Consultancy Services</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020 - 2023</span><br>BCA at Bishop Heber College</li>
+                            <li><span>2019 - 2020</span><br>12th STD at Bishop Heber Hr.Sec.School</li>
+                            <li><span>2017 - 2018</span><br>10th STD at St.Joseph's College Hr.Sec.School</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+<!------------  Services  -------------------------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title"> My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-laptop-code"></i>
+                <h2> Backend Development</h2>
+                <p>I build robust, secure, and scalable server-side applications. From APIs to database integration, I ensure seamless performance and reliability using technologies like Java and MySQL.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2> Web Design</h2>
+                <p>I craft visually appealing, responsive, and user-friendly interfaces. With a focus on clean layouts and smooth interactions, I bring ideas to life using HTML, CSS, and JavaScript.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------------  Project  -------------------------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title"> My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    soluta aliquam exercitationem mollitia minus earum itaque neque, nihil eum corporis quas.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Music App</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    soluta aliquam exercitationem mollitia minus earum itaque neque, nihil eum corporis quas.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Shopping App</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    soluta aliquam exercitationem mollitia minus earum itaque neque, nihil eum corporis quas.</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+
+<!---------------------- Contact  ---------------------->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>hariharanhari6033@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>8072369012</p>
+                <div class="social-icons">
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/__harixh_?igsh=dmlscGZqbWdzMmhw&utm_source=qr"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="http://linkedin.com/in/hariharanravichandran01"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="7" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Hari. Made with - HTML, CSS, JS &nbsp; <i class="fa-solid fa-toolbox"></i></p>
+    </div>
+</div>
+
+</body>
+</html>
